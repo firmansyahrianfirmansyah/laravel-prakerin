@@ -4,11 +4,9 @@
 	<title>Daftar</title>
 </head>
 <body>
-	<table border="5" bgcolor="skyblue" align="center">
-	<tr>
-		<th>Id</th>
-		<th>Nama</th>
-	</tr>
-	</table>
+	<h1>Daftar Barang :</h1>
+	@foreach ($data as $buah)
+	<li>{{($buah)}}</li>
+	@endforeach
 </body>
 </html>

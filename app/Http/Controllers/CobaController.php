@@ -41,4 +41,10 @@ class CobaController extends Controller
     	$yoyo = $dato[$data];
     	return view('aa', compact('yoyo'));
     }
+
+      public function test3($nama & $jurusan)
+    {
+    	$a = coba::where('nama','like',$nama)->orwhere('jurusan','like',$jurusan)->get();
+    	return $a;
+    }
 }

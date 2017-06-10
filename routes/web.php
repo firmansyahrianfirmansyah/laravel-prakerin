@@ -24,10 +24,12 @@ Route::get('/', function () {
 // Route::get('halaman/{id}','PrakerinController@param');
 // Route::get('/{a}','PrakerinController@parameter');
 
-Route::get('test1','CobaController@test');
-Route::get('coba/{id}','CobaController@test2');
+// Route::get('test1','CobaController@test');
+// Route::get('coba/{id}','CobaController@test2');
+// Route::get('test7}','CobaController@rian');
+// Route::get('test0','CobaController@percobian');
 
-Route::get('test7','CobaController@rian');
-Route::get('test0','CobaController@percobian');
+// Route::get('{data}','CobaController@dunia');
+// Route::get('test3/{nama}{jurusan}','CobaController@test3');
 
-Route::get('{data}','CobaController@dunia');
+Route::resource('post','PostController');
